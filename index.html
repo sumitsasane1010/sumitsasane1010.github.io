@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumit Sasane | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #020617;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    font-size: 40px;
+}
+header p {
+    color: #94a3b8;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Skills */
+.skills span {
+    background: #1e293b;
+    padding: 8px 12px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.skills span:hover {
+    background: #38bdf8;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Sumit Shyam Sasane</h1>
+    <p>Python Full Stack Developer</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Results-driven Python Full Stack Developer with hands-on experience in Django, HTML, CSS, and MySQL.
+        Passionate about building scalable web applications and solving real-world problems.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Django</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Bootstrap</span>
+        <span>MySQL</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Smart Restaurant Management System</h3>
+            <p>Django-based system for managing restaurant operations.</p>
+            <a href="https://github.com/sumitsasane1010" class="btn">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>Online Job Portal</h3>
+            <p>Platform for job seekers and recruiters.</p>
+            <a href="https://github.com/sumitsasane1010" class="btn">View Code</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@gmail.com</p>
+    <p>
+        <a href="https://github.com/sumitsasane1010">GitHub</a> |
+        <a href="https://linkedin.com/in/sumit-sasane-10896b364">LinkedIn</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Sumit Sasane</p>
+</footer>
+
+</body>
+</html>
