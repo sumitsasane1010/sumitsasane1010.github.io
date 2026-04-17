@@ -47,6 +47,18 @@ section {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Skills */
@@ -73,11 +85,12 @@ section {
     background: #1e293b;
     padding: 20px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
-    transform: translateY(-5px);
-    background: #334155;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
 }
 
 /* Button */
@@ -97,6 +110,14 @@ footer {
     padding: 20px;
     background: #020617;
     margin-top: 30px;
+}
+
+.contact-links {
+    margin-top: 10px;
+}
+
+.contact-links a {
+    margin-right: 10px;
 }
 </style>
 
@@ -159,11 +180,12 @@ footer {
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@gmail.com</p>
-    <p>
-        <a href="https://github.com/sumitsasane1010">GitHub</a> |
-        <a href="https://linkedin.com/in/sumit-sasane-10896b364">LinkedIn</a>
-    </p>
+    <p>Email: sumitsasane1010@gmail.com</p>
+    <p>Mobile: +91 9699101594</p>
+    <div class="contact-links">
+    <a href="https://github.com/sumitsasane1010" class="btn">GitHub</a>
+    <a href="https://linkedin.com/in/sumit-sasane-10896b364" class="btn">LinkedIn</a>
+</div>
 </section>
 
 <footer>
